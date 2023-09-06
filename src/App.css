@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif, serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-top: 1.5em;
+}
+.header {
+  margin-top: 0.5em;
+  font-size: 3em;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.product-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1em;
+  align-items: start;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.art {
+  margin-top: 1rem;
+  align-self: center;
+  background-color: black;
+  color: white;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: 1px solid white;
+}
+.art:hover {
+  border-radius: 0px;
+  border: 1px solid white;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.input {
+  width: 14rem;
+  height: 2.5rem;
+  border-radius: 0.9rem;
+  border: 0px;
+  margin-bottom: 1rem;
+}
+
+.filter {
+  background-color: rgb(22, 255, 22);
+  height: 1.5rem;
+  width: 4rem;
+  border-radius: 7%;
+  border: 1px solid black;
+}
+.language {
+  font-size: 0.8em;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+.container-filter {
+}
